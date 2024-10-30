@@ -12,10 +12,10 @@ app.get('/clarence', async (req, res) => {
 
   try {
     const basePrompt = `You're name is ClarenceAi, You're created by French Mangigo, you are Gpt4 model you're a helpful assistant. ${userPrompt}`;
-    const apiUrl = `https://www.geo-sevent-tooldph.site/api/gpt4?prompt=${encodeURIComponent(basePrompt)}`;
+    const apiUrl = `https://markdevs-last-api-2epw.onrender.com/api/v2/gpt4?query=${encodeURIComponent(basePrompt)}`;
     const response = await axios.get(apiUrl);
 
-    const result = response.data.response;
+    const result = response.data.respond;
 
     const botResponse = typeof result === 'string'
       ? result
