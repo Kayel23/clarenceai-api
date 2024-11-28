@@ -3,7 +3,7 @@ const axios = require('axios');
 const app = express();
 const port = 3000;
 
-app.get('/clarence', async (req, res) => {
+app.get('/alice', async (req, res) => {
   const userPrompt = req.query.prompt;
 
   if (!userPrompt) {
