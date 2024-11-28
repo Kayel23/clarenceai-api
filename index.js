@@ -25,11 +25,11 @@ Here’s the user’s message: ${userPrompt}`;
       ? result
       : (typeof result === 'object' && result !== null)
         ? Object.values(result).join(' ') 
-        : "No response received from ClarenceAi. 🤖";
+        : "No response received from ALICE. 🤖";
 
     res.json({ response: ` ${botResponse}` });
   } catch (error) {
-    console.error('Error calling ClarenceAi: 😔', error);
+    console.error('Error calling ALICE: 😔', error);
     res.status(500).json({ message: 'Error processing your request' });
   }
 });
